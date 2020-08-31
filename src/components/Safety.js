@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function Safety() {
   return (
@@ -12,7 +13,10 @@ function Safety() {
 		<ul>
 			<li><strong>Taking stupid risks.</strong> This one is self-explanatory. Indoor rock climbing gyms are usually very safe environments, with staff that watch for dangerous practices. However, they cannot stop you from being stupid. Follow the rules--they are there for a reason. Outdoors climbing takes place in an uncontrolled environment. There are all the usual dangers of being outside, like inclement weather, combined with some other possible dangers, like poorly anchored bolts. If you are climbing outside, go with an experienced climber and use your common sense.</li>
 			<li><strong>Inattention.</strong> Safety gear only works if you use it properly. Inattention means not checking your gear, leaving your knots untied, or forgetting to double back your harness buckles. A belayer who is not paying attention to their climber can also fail to stop a fall or lower a climber too quickly. <strong>Always</strong> do your double-checks and <strong>never</strong> climb with a belayer you do not trust.</li>
-			<li><strong>Inadequate or poorly maintained gear.</strong> Climbing gear is expensive, and it can be tempting to cut corners. Don't do it. A broken ankle is far more expensive than spending $20 extra dollars for a new harness. In the <a href="equipment.html">equipment</a> section I talk more about what gear you can buy used, and what you should get new. Also check your gear regularly for signs of wear, and replace it if it looks like it is starting to wear out. The same goes for rented or borrowed equipment. Inspect it, and don't be afraid to ask for other gear if what you got looks sketchy.</li>
+			<li><strong>Inadequate or poorly maintained gear.</strong> 
+			Climbing gear is expensive, and it can be tempting to cut corners. 
+			Don't do it. A broken ankle is far more expensive than spending $20 extra dollars for a new harness. 
+			In the <Link to="/equipment">equipment</Link> section I talk more about what gear you can buy used, and what you should get new. Also check your gear regularly for signs of wear, and replace it if it looks like it is starting to wear out. The same goes for rented or borrowed equipment. Inspect it, and don't be afraid to ask for other gear if what you got looks sketchy.</li>
 		</ul>
 		
 		<p>Pay attention and trust your instincts, and you should be just fine.</p>

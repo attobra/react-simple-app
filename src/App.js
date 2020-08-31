@@ -1,40 +1,23 @@
 import React from 'react'
 import './App.css'
+import Footer from './components/layout/Footer'
+import Header from './components/layout/Header'
+import Sidebar from './components/layout/Sidebar'
 import Basics from './components/Basics'
 import Types from './components/Types'
 import Safety from './components/Safety'
 import Equipment from './components/Equipment'
 import Where from './components/Where'
-import { BrowserRouter, Switch, Route, Link } from 'react-router-dom'
+import { BrowserRouter, Switch, Route} from 'react-router-dom'
 
 const App = () => {
     return (
       <BrowserRouter>
     
     <div className="wrapper">
-      <div className = "header">
-        <h1>Climbing the Triangle</h1>
-      </div>
+      <Header />
       
-      <div className="sidebar">
-      <ul>
-        <li>
-          <Link to="/">The Basics</Link>
-        </li>
-        <li>
-          <Link to="/types">Types of Climbing</Link>
-        </li>
-        <li>
-          <Link to="/safety">Safety</Link>
-        </li>
-        <li>
-          <Link to="/equipment">Equipment</Link>
-        </li>
-        <li>
-          <Link to="/where">Where to Climb</Link>
-        </li>
-      </ul>
-      </div>
+      <Sidebar />
       
       <Switch>
         <Route exact path="/" component={Basics} />
@@ -44,9 +27,8 @@ const App = () => {
         <Route path="/where" component={Where} />
       </Switch>
 
-      <div className="footer">
-		<p>A sample site by Sylvia Richardson</p>
-	</div>
+      <Footer />
+
     </div>
   </BrowserRouter>
     )

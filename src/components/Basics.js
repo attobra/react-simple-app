@@ -1,11 +1,12 @@
 import React from 'react';
+import climbingwoman from './img/climbingwoman.jpg' 
  
 const Basics = () => {
   
     return (
       <div>
 		    <h2>The Basics</h2>
-		    <img className="alignleft" src="./img/climbing-woman.jpg" alt="A woman bouldering" />
+		    <img className="alignleft" src={climbingwoman} alt="A woman bouldering" />
 		    <p>Are you thinking about trying <a href="https://en.wikipedia.org/wiki/Rock_climbing" target="_blank">rock climbing?</a> 
         Climbing is a fun and challenging sport that has a surge of popularity in recent years. 
         Almost anyone can climb: you don't need a high level of strength or fitness to get started. 
